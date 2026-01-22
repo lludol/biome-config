@@ -7,15 +7,7 @@
 	},
 	"files": {
 		"ignoreUnknown": true,
-		"includes": [
-			"**",
-			"!node_modules",
-			"!.next",
-			"!dist",
-			"!build",
-			"!.turbo",
-			"!coverage"
-		]
+		"includes": ["**", "!node_modules", "!.next", "!dist", "!build", "!.turbo", "!coverage"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -64,10 +56,7 @@
 					"level": "error",
 					"options": {
 						"strictCase": true,
-						"filenameCases": [
-							"kebab-case",
-							"camelCase"
-						]
+						"filenameCases": ["kebab-case", "camelCase"]
 					}
 				}
 			},
@@ -101,9 +90,7 @@
 			"semicolons": "always",
 			"arrowParentheses": "always"
 		},
-		"globals": [
-			"React"
-		]
+		"globals": ["React"]
 	},
 	"json": {
 		"formatter": {

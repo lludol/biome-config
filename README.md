@@ -14,16 +14,16 @@ Install this config package as a dev dependency in your project:
 npm install --save-dev @lludol/biome-config @biomejs/biome
 ```
 
-or with yarn:
-
-```bash
-yarn add -D @lludol/biome-config @biomejs/biome
-```
-
 or with pnpm:
 
 ```bash
 pnpm add -D @lludol/biome-config @biomejs/biome
+```
+
+or with bun:
+
+```bash
+bun add -d @lludol/biome-config @biomejs/biome
 ```
 
 ## Usage
@@ -65,22 +65,32 @@ Add these scripts to your `package.json`:
 
 This config includes:
 
-- **Formatter**: Enabled with 2-space indentation, 100 character line width
-- **Linter**: Enabled with recommended rules
-- **Organize Imports**: Enabled
+- **Formatter**: Enabled with tab indentation (4 spaces), 100 character line width
+- **Linter**: Enabled with recommended rules plus custom rules for correctness, style, a11y, security, and performance
+- **Organize Imports**: Enabled via assist actions
 - **JavaScript/TypeScript**:
-  - Single quotes
+  - Double quotes
   - Semicolons required
-  - ES5 trailing commas
+  - All trailing commas
+  - React and Next.js domain support
+- **CSS**: Formatter and linter enabled with CSS Modules and Tailwind support
 
 ## Publishing
 
 To publish this package to NPM:
 
 ```bash
+# Login to npm (if not already logged in)
 npm login
-npm publish --access public
+
+# Validate the config before publishing (runs automatically via prepublishOnly)
+bun run validate
+
+# Publish using bun (validation runs automatically before publish)
+bun publish
 ```
+
+The `prepublishOnly` script automatically validates the Biome configuration before publishing to ensure it's valid.
 
 ## License
 

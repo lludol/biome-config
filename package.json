@@ -7,7 +7,10 @@
     "biome.json"
   ],
   "scripts": {
-    "test": "echo \"No tests configured\" && exit 0"
+    "test": "echo \"No tests configured\" && exit 0",
+    "validate": "biome check biome.json --config-path biome.json",
+    "prepublishOnly": "bun run validate",
+    "publish": "bun publish"
   },
   "keywords": [
     "biome",
@@ -28,6 +31,6 @@
   },
   "homepage": "https://github.com/lludol/biome-config#readme",
   "peerDependencies": {
-    "@biomejs/biome": ">=1.0.0"
+    "@biomejs/biome": ">=2.3.11"
   }
 }

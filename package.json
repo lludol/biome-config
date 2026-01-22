@@ -1,5 +1,5 @@
 {
-  "name": "@lludol/biome-config",
+  "name": "biome-config-lludol",
   "version": "1.0.0",
   "description": "Personal Biome configuration for JavaScript/TypeScript projects",
   "main": "biome.json",

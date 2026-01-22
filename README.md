@@ -32,7 +32,7 @@ Create a `biome.json` file in your project root that extends this config:
 
 ```json
 {
-  "extends": ["@lludol/biome-config"]
+  "extends": ["@lludol/biome-config/biome.json"]
 }
 ```
 
@@ -40,7 +40,7 @@ Or if you need to customize some settings:
 
 ```json
 {
-  "extends": ["@lludol/biome-config"],
+  "extends": ["@lludol/biome-config/biome.json"],
   "formatter": {
     "lineWidth": 120
   }

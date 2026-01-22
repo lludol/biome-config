@@ -1,0 +1,33 @@
+{
+  "name": "@lludol/biome-config",
+  "version": "1.0.0",
+  "description": "Personal Biome configuration for JavaScript/TypeScript projects",
+  "main": "biome.json",
+  "files": [
+    "biome.json"
+  ],
+  "scripts": {
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "keywords": [
+    "biome",
+    "config",
+    "linter",
+    "formatter",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Ludovic",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lludol/biome-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lludol/biome-config/issues"
+  },
+  "homepage": "https://github.com/lludol/biome-config#readme",
+  "peerDependencies": {
+    "@biomejs/biome": ">=1.0.0"
+  }
+}
